@@ -1,0 +1,76 @@
+import { useState } from "react";
+import "./assets/css/TODO.css";
+export function TODOApp() {
+  let items = [
+    {
+      id: 1,
+      subject: "Learn React",
+    },
+    {
+      id: 2,
+      subject: "Angular",
+    },
+    {
+      id: 3,
+      subject: "Micro services",
+    },
+  ];
+  let [todolist, fun3] = useState(items);
+  return (
+    <>
+      <br />
+      <h1>Todo App using react</h1>
+      <div className="input-group tb">
+        <input type="text" className="form-control" id="iname" />
+        <button
+          className="btn btn-primary"
+          onClick={() => {
+            let task = document.getElementById("iname").value;
+
+            let newTodosList = [
+              ...todolist,
+              {
+                id: todolist.length + 1,
+                subject: task,
+              },
+            ];
+            console.log(newTodosList);
+            document.getElementById("iname").value = "";
+            fun3(newTodosList);
+          }}
+        >
+          Add TODO
+        </button>
+      </div>
+      <GetAllPendingItems />
+    </>
+  );
+
+  function GetAllPendingItems() {
+    let AllChilds = todolist.map((e) => {
+      return (
+        <div key={e.id} className="listEle">
+          <li className="list-group-item small">
+            {" "}
+            {e.subject} 
+            <button className="btn btn-danger" onClick={(event) => {
+                console.log("clicked ele is",e.id);
+                //Deleting ele
+                todolist.splice(e.id - 1, 1);
+                console.dir(todolist);
+                fun3(todolist);
+              }}
+            >
+              ❌
+            </button>
+          </li>
+        </div>
+      );
+    });
+    return (
+      <>
+        <ul className="list-group cont">{AllChilds}</ul>
+      </>
+    );
+  }
+}

@@ -1,0 +1,46 @@
+easy - aliases, exports , default exports and imports
+
+
+Namespaces, predfined classes, functions
+ ReactDom,
+ classes - component,Root
+ functions - createRoot(), createElement()
+ functional component - calling child comp from parent comp, props - passing attributes for html tag, passing content between tags (child props)
+       <GetSingleEmployeeInfo empInfo={emp} city="hyd" > Hyderabad  </ GetSingleEmployeeInfo > 
+	   
+ what are react fragments  in functional components
+ including css file
+ npm commands- 
+
+
+how to auto re-render in class component - setState() 
+ state, state hook , update state
+ variables, methods present in component class - like state, setState()
+
+Hooks in react- /how to auto re-render in functional component -react ns. useState(), useEffect(),
+misc utility hooks  - useParams() , useLocation()
+
+what is object de-structuring in react and where it is used -- used in props, spread operator
+two way data binding
+
+
+program:- todo app, keypad program
+react virtual dom/ reconciliation in react
+
+Routes
+-----
+links and routes in react, how to fetch the path params & query params in react- using hooks useParams() , useLocation()
+1)  <BrowserRouter>         <Routes> must be returned in the output, else routes will not be recognised
+2) any functional component which have links must be declared inside  <BrowserRouter>    tag only, else server wont start
+
+
+html related questions
+1) how to include an image- it must be in either src/public folder
+
+
+routing
+--------------
+ react outlet, routing, browser routes, mapping like for which component which url...
+ routing, nested routing demo
+ 
+
