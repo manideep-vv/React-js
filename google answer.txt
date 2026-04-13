@@ -1,0 +1,68 @@
+import { useState } from "react";
+import "./assets/css/TODO.css";
+
+export function TODOApp() {
+  let items = [
+    { id: 1, subject: "Learn React" },
+    { id: 2, subject: "Angular" },
+    { id: 3, subject: "Micro services" },
+  ];
+  let [todolist, setTodoList] = useState(items);
+
+  return (
+    <>
+      <br />
+      <h1>Todo App using react</h1>
+      {console.log("re-rendering the full component with data as", todolist)}
+      <div className="input-group tb">
+        <input type="text" className="form-control" id="iname" />
+        <button
+          className="btn btn-primary"
+          onClick={() => {
+            let task = document.getElementById("iname").value;
+
+            let newTodosList = [
+              ...todolist,
+              { id: todolist.length + 1, subject: task },
+            ];
+            console.log(newTodosList);
+            document.getElementById("iname").value = "";
+            setTodoList(newTodosList);
+          }}
+        >
+          Add TODO
+        </button>
+      </div>
+      <GetAllPendingItems todolist={todolist} setTodoList={setTodoList} />
+    </>
+  );
+}
+
+function GetAllPendingItems({ todolist, setTodoList }) {
+  console.log("calling GetAllPendingItems method alone");
+
+  return (
+    <>
+      <ul className="list-group cont">
+        {todolist.map((e) => (
+          <div key={e.id} className="listEle">
+            <li className="list-group-item small">
+              {e.subject}
+              <button
+                className="btn btn-danger"
+                onClick={() => {
+                  console.log("clicked ele is->", e.id);
+                  const newTodoList = [...todolist]; // Create a copy
+                  newTodoList.splice(e.id - 1, 1); // Remove the item using splice
+                  setTodoList(newTodoList); // Update state using setTodoList
+                }}
+              >
+                ❌
+              </button>
+            </li>
+          </div>
+        ))}
+      </ul>
+    </>
+  );
+}
