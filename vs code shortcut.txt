@@ -1,0 +1,90 @@
+VS CODE SHORTCUTS - WINDOWS (SALESFORCE + APEX + LWC)
+1) to open keymap / existing shortcuts - (preference keyboardshortcuts or -- ctrl+shift+P -- search for keyboardshortcuts
+) type Press Ctrl+K Ctrl+S and select -- deploy and add ur shortcut
+i have added as ctrl+1 shortcut to deploy to org
+
+2) to see all options - Ctrl + Shift + P -- open command pallette- here u can search ur requirement like formating or open settings ...
+3) to see all existing setting -- ctrl+,
+4) to see settings.json file -  Ctrl + Shift + P and search  "open user settings" then settings.json will be installed
+
+plugins- apex helper formatter - to format the code
+1. BASIC EDITING
+- go back to previous file -- alt+left arrow
+- 1) To format code - alt+shift+F
+- to refactor - use F2- this is also same like intellij-- Shift+F6
+- Delete entire line: Ctrl + Shift + K
+- Cut entire line: Ctrl + X
+- Copy entire line: Ctrl + C
+- Duplicate line: Shift + Alt + DownArrow
+- Move line up/down: Alt + Up/DownArrow
+- Join lines: Ctrl + J
+- Insert line above: Ctrl + Shift + Enter
+- Insert line below: Ctrl + Enter
+--> create a new salesforce class -- Ctrl + Shift + P - type create new apex class 
+This is the BEST way because: It creates proper metadata files, It stores file in correct location, It maintains Salesforce project structure 
+--Renaming a class file - simple rename class name with  F2 shortcut- it will refactor all places like class name, file name, metadata file name
+1) using F2 shortcut - 1) rename class name  2) then .cls file name 3) <fullName> inside the -meta.xml file 
+all these 3 we should change and then deploy to org
+
+
+2. CURSOR & SELECTION & window
+- Select current line: Ctrl + L
+- Select current word: Ctrl + D
+- Select all occurrences: Ctrl + Shift + L
+- Add cursor (multi cursor): Alt + Click
+- Select to end: Shift + End
+- Select to beginning: Shift + Home
+- to maximise the window - ctrl + J
+- swap layout ordering - ctrl+E (cursor ai )- means left side project explorer will come into right side and u can swap each other
+
+3. SEARCH & NAVIGATION
+- go back to previous file -- alt+left arrow
+- how to move page up and down - Ctrl+ up arrow , Ctrl+ down
+- Search in file: Ctrl + F
+- Replace: Ctrl + H
+- Search entire project: Ctrl + Shift + F
+- Jump to file: Ctrl + P
+- Go to class/method: Ctrl + Shift + O
+- Open Explorer: Ctrl + Shift + E
+- Open terminal: Ctrl + `
+
+4. CODE FORMATTING ( see last lines to know how to install prettier and how to configure that plugin )
+- Format entire document: Shift + Alt + F or Ctrl + Shift + I → Format Document
+- Format selection: Shift + Alt + F
+- Enable Format on Save: Settings → 'Format on Save'
+
+
+5. SALESFORCE COMMANDS (with extensions installed)
+- Command Palette: Ctrl + Shift + P
+- Deploy file to org: Ctrl + Shift + P → SFDX: Deploy This Source to Org
+- Retrieve file: Ctrl + Shift + P → SFDX: Retrieve This Source
+- Run Anonymous Apex: Ctrl + Shift + P → SFDX: Execute Anonymous Apex
+- Open Default Org: Ctrl + Shift + P → SFDX: Open Default Org
+
+6. APEX-SPECIFIC HELPERS
+- Toggle comment: Ctrl + /
+- Block comment: Shift + Alt + A
+- Fold region: Ctrl + Shift + [
+- Unfold region: Ctrl + Shift + ]
+- Rename variable/method: F2
+- Find references: Shift + F12
+- Peek definition: Alt + F12
+- Go to definition: F12
+
+7. LWC / HTML
+- Wrap with tag: Alt + Shift + W
+- Emmet expand: Tab
+- Go to matching bracket: Ctrl + Shift + \\
+
+8. TABS & WINDOWS
+- New file: Ctrl + N
+- Close file: Ctrl + W
+- Next tab: Ctrl + Tab
+- Previous tab: Ctrl + Shift + Tab
+- Split editor: Ctrl + \\
+- Close editor group: Ctrl + K, W
+
+9. LARGE FILE NAVIGATION
+- Go to line: Ctrl + G
+- Toggle minimap: Ctrl + Shift + P → Minimap Toggle
+- Zoom in/out: Ctrl + + / Ctrl + -
