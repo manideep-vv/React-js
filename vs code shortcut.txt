@@ -7,8 +7,16 @@ i have added as ctrl+1 shortcut to deploy to org
 3) to see all existing setting -- ctrl+,
 4) to see settings.json file -  Ctrl + Shift + P and search  "open user settings" then settings.json will be installed
 
+for autocomplete in vs code 
+-------------------
+to get h3 tag , dont start typing as < less than symbol,
+start typing with h3 , then tag will come automatically
+
+
 plugins- apex helper formatter - to format the code
 1. BASIC EDITING
+create a new current line below by pushing current line below- ctrl + shift +enter
+to create a new line in current line and move the current line downwards - shift+enter
 - go back to previous file -- alt+left arrow
 - 1) To format code - alt+shift+F
 - to refactor - use F2- this is also same like intellij-- Shift+F6
@@ -21,11 +29,13 @@ plugins- apex helper formatter - to format the code
 - Insert line above: Ctrl + Shift + Enter
 - Insert line below: Ctrl + Enter
 --> create a new salesforce class -- Ctrl + Shift + P - type create new apex class 
-This is the BEST way because: It creates proper metadata files, It stores file in correct location, It maintains Salesforce project structure 
---Renaming a class file - simple rename class name with  F2 shortcut- it will refactor all places like class name, file name, metadata file name
-1) using F2 shortcut - 1) rename class name  2) then .cls file name 3) <fullName> inside the -meta.xml file 
-all these 3 we should change and then deploy to org
+--- vertical select- alt+shift
 
+This is the BEST way because: It creates proper metadata files, It stores file in correct location, It maintains Salesforce project structure 
+-- refactor --Renaming a class file - simple rename class name with  F2 shortcut- it will refactor all places like class name, file name, metadata file name
+1) using F2 shortcut - 1) rename class name  2) then .cls file name 3) <fullName> inside the -meta.xml file 
+
+comments Ctrl+/
 
 2. CURSOR & SELECTION & window
 - Select current line: Ctrl + L
@@ -47,6 +57,8 @@ all these 3 we should change and then deploy to org
 - Go to class/method: Ctrl + Shift + O
 - Open Explorer: Ctrl + Shift + E
 - Open terminal: Ctrl + `
+to search in all files- ctrl+shift+F
+
 
 4. CODE FORMATTING ( see last lines to know how to install prettier and how to configure that plugin )
 - Format entire document: Shift + Alt + F or Ctrl + Shift + I → Format Document
@@ -54,37 +66,12 @@ all these 3 we should change and then deploy to org
 - Enable Format on Save: Settings → 'Format on Save'
 
 
-5. SALESFORCE COMMANDS (with extensions installed)
-- Command Palette: Ctrl + Shift + P
-- Deploy file to org: Ctrl + Shift + P → SFDX: Deploy This Source to Org
-- Retrieve file: Ctrl + Shift + P → SFDX: Retrieve This Source
-- Run Anonymous Apex: Ctrl + Shift + P → SFDX: Execute Anonymous Apex
-- Open Default Org: Ctrl + Shift + P → SFDX: Open Default Org
 
-6. APEX-SPECIFIC HELPERS
-- Toggle comment: Ctrl + /
-- Block comment: Shift + Alt + A
-- Fold region: Ctrl + Shift + [
-- Unfold region: Ctrl + Shift + ]
-- Rename variable/method: F2
-- Find references: Shift + F12
-- Peek definition: Alt + F12
-- Go to definition: F12
 
-7. LWC / HTML
-- Wrap with tag: Alt + Shift + W
-- Emmet expand: Tab
-- Go to matching bracket: Ctrl + Shift + \\
+- to insert emoji in vs code:- windows+. (dot )
 
-8. TABS & WINDOWS
-- New file: Ctrl + N
-- Close file: Ctrl + W
-- Next tab: Ctrl + Tab
-- Previous tab: Ctrl + Shift + Tab
-- Split editor: Ctrl + \\
-- Close editor group: Ctrl + K, W
+chrome shortcuts
+=====================
+1) to open debugger tools press - C+shift+I or F12
+2) to write in chrome console - ctrl+back tick // ctrl+` 
 
-9. LARGE FILE NAVIGATION
-- Go to line: Ctrl + G
-- Toggle minimap: Ctrl + Shift + P → Minimap Toggle
-- Zoom in/out: Ctrl + + / Ctrl + -
