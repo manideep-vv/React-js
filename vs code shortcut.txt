@@ -26,7 +26,7 @@ to create a new line in current line and move the current line downwards - shift
 - Duplicate line: Shift + Alt + DownArrow
 - Move line up/down: Alt + Up/DownArrow
 - Join lines: Ctrl + J
-- Insert line above: Ctrl + Shift + Enter
+- create a new line in current line by pushing the existing line down : Ctrl + Shift + Enter
 - Insert line below: Ctrl + Enter
 --> create a new salesforce class -- Ctrl + Shift + P - type create new apex class 
 --- vertical select- alt+shift
