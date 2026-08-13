@@ -75,3 +75,5 @@ chrome shortcuts
 1) to open debugger tools press - C+shift+I or F12
 2) to write in chrome console - ctrl+back tick // ctrl+` 
 
+html shortcuts 
+if u want to write a div tag with id="#" then instead of writing div, start writing as '#id' then div tag will come automatically
