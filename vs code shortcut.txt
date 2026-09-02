@@ -77,3 +77,8 @@ chrome shortcuts
 
 html shortcuts 
 if u want to write a div tag with id="#" then instead of writing div, start writing as '#id' then div tag will come automatically
+
+
+plugins 
+-----------
+for live server- install plugin called 'liver server' by ritwick dey

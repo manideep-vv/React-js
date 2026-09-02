@@ -24,3 +24,5 @@ hs_err_pid*
 replay_pid*
 ~$React_notes_part 2.docx
 ~$act My notes.docx
+*.tmp
+~$act_notes_fixed_tables.docx
